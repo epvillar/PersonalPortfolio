@@ -1,0 +1,382 @@
+
+/*General*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap'); /*para poder usar Monserrat*/
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --nav: red;
+    --gray: gray;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+html {
+    box-sizing: border-box;
+    color: var(--light);
+    background: var(--dark);
+    line-height: 1.4;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    height: 160px;
+    max-width: 100%;
+    background: var(--gray);
+    position: fixed;
+    z-index: 2;
+}
+a {
+    text-decoration: none;
+}
+/*Navbar section*/
+
+#navbar ul {
+    width: 100%;
+    display: grid;
+    grid-gap: .1rem;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+    position: fixed;
+}
+#navbar a{
+    background: var(--gray);
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem;
+    text-align: center;
+    color: var(--light);
+    font-size: 1.5rem;
+}
+#navbar a:hover {
+    background: var(--dark);
+    color: var(--nav);
+}
+
+
+/*Heading section*/
+#heading {
+    top: 50px;
+    height: 70px;
+    background:gray;
+    color: var(--dark);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80px 1fr 80px 150px;
+    padding-top: 10px;
+    justify-content: space-around;
+    position: fixed;
+}
+.photo {
+    display: block;
+    padding-left: 1px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    height: 60px;
+    margin-left: 20px;
+}
+.photo1 {
+    display: block;
+    padding-left: 15px;
+    padding-top: 2px;
+    height: 55px;
+}
+.nombre, .quino, .org {
+    display: block;
+    height: 60px;
+}
+.nombre {
+    padding-left: 15px;
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    padding-top:5px;
+    color: var(--light);
+}
+.org {
+    padding-left: 15px;
+    font-size: 1rem;
+    letter-spacing: .2rem;
+    color: var(--light);
+    justify-content: space-between;
+}
+.photo-org {
+    padding-left: 10px;
+    padding-top: 8px;
+}
+
+/*Welcome section*/
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: url(https://images.unsplash.com/photo-1558478551-be297c7bb253?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDUyfGFldTZyTC1qNmV3fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: url(https://images.unsplash.com/photo-1593642703055-4b72c180d9b5?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDQyM3xKOXlyUGFIWFJRWXx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.mundo {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-size: 30px;
+    text-align: center;
+    color: var(--dark);
+}
+
+.mundo h1 {
+    font-weight: normal;
+}
+.mundo2, #profile-link {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--dark);
+    padding-bottom: 20px;
+}
+
+/*PROJECTS*/
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: lightseagreen;
+    height: 100vh;
+    width: 100%;
+}
+.mundo3 {
+    font-size: 35px;
+    text-align: center;
+    color: var(--dark);
+}
+.project-tile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 100px;
+    margin-bottom:0px;
+    justify-content:center;
+    align-items: center;
+}
+
+#image {
+    width: 300px;
+    height: 200px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#img-caption {
+    margin-left: 10vw;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+/*CONTACT*/
+#contact {
+    height: 95vh;
+    width: 100%;
+    background: url(https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8YWV1NnJMLWo2ZXd8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+
+}
+.contact-section {
+    margin: 100px;
+}
+.worktogether {
+    margin-top: 15%;
+    font-size: 35px;
+    text-align: center;
+}
+
+.cafecito {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.venite {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+}
+.contact-items {
+    margin-left: 0px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-top: 5%;
+    margin-bottom: 10px;
+}
+.texto {
+    height: 20px;
+    width: 100px;
+    margin-left: 0px;
+}
+/*animation para los social icons*/
+@keyframes example {
+    0%   {transform: scale(1);}
+    33%  {background-color: yellow; left:0px; top:12.5px;}
+    66%  {background-color: green; left:0px; top:12.5px;}
+    80% {background-color:red; left:0px; top:0px;}
+    100% {transform:scale(2);}
+  }
+.icon:hover {
+    animation-name: example;
+    animation-timing-function: linear;
+    animation-duration: .5s;
+    animation-iteration-count: 3;
+  }
+.texto:hover {
+    animation-name: example;
+    animation-timing-function: linear;
+    animation-duration: .5s;
+    animation-iteration-count: 3;
+  }
+
+/*Footer Section*/
+#footer {
+    margin: auto;
+    height: 5vh;
+    background: rgb(125, 171, 216);
+    text-align: center;
+    padding-top: 10px;
+    }
+
+@media(max-width: 800px) {
+#navbar a{
+    font-size: 1.5rem;
+    background-color: lightsalmon;
+}
+#heading {
+    height: 65px;
+    background-color: lightsalmon;
+}
+.nombre, .org {
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: 0;
+    padding-top: 5px;
+}
+.photo, .photo1, .quino {
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+/*Projects*/
+.project-tile {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 0px;
+    padding-top: 0px;
+    justify-content:center;
+    align-items: center;
+}
+
+.mundo, .mundo3, .mundo2 {
+    padding-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.undo2, #profile-link {
+    font-size: 1em;
+    text-align: center;
+    color: var(--dark);
+    padding-bottom: 20px;
+}
+#img-caption {
+    margin-left: 30vw;
+    font-size: .7em;
+    margin-bottom: 5px;
+}
+#image {
+    width: 200px;
+    height: 150px;
+    margin-left: 30vw;
+}
+/*Contact*/
+.worktogether {
+    margin-top: 0px;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cafecito, .venite {
+    font-size: 1em;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#contact {
+    justify-content: space-between;
+}
+.contact-items {
+    margin-left: 10px;
+    margin-top: 20px;
+    display: flex;
+}
+.icon {
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.texto {
+    font-size: .6em;
+    width: 50px;
+    margin-right: 5px;
+}
+
+/*Footer*/
+.foot {
+    width: auto;
+    font-size: .8em;
+    margin-left: 10px;
+}
+
+}
